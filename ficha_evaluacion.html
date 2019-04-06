@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "datosl datosr datosr datosr"
+  "rubrica puntajeObtenido promedioGrupo promedioCurso";
+  grid-template-columns: 60% 20% 10% 10%;
+    grid-row-gap: 0px;
+} 
+
+p.underline {
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: blue;
+}
+
+.datosl,
+.datosr,
+.promedioCurso,
+.promedioGrupo,
+.puntajeObtenido, 
+.rubrica{
+  background-color: #e5ccff;
+  border-style: none;
+  border-width: 1px;
+  border-color: #002e4d;
+  padding: 10px;
+}
+
+.datosr{
+  grid-area: datosr;
+  background-color: #f2e6ff;
+}
+.datosl{
+  grid-area: datosl;
+  background-color: #f2e6ff;
+}
+.promedioCurso {
+  grid-area: promedioCurso;
+  text-align: center;
+}
+
+.promedioGrupo {
+  grid-area: promedioGrupo;
+  text-align: center;
+}
+
+.puntajeObtenido {
+  grid-area: puntajeObtenido;
+  text-align: center;
+}
+
+.rubrica {
+  grid-area: rubrica;
+}
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Condiciones';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Ocultar';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: black;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid blue;
+  border-radius: .25em;
+}
+
+</style>
+</head>
+
+<body>
+<div class="grid-container">
+  <div class="datosl">
+    Curso: Ingeniería de Software <br>
+    Fecha: 09/04/2019
+  </div>
+  <div class="datosr">
+  Grupo: yet another quality commit<br>
+  Integrantes: 
+  <ul>
+   <li> integrante 1 </li>
+   <li> integrante 2 </li>
+   <li> integrante 3 </li>
+   <li> integrante 4 </li>
+  </ul>
+  
+  </div>
+  <div class="promedioGrupo">
+  	<p class="underline">grupo</p>
+  </div>
+  <div class="puntajeObtenido">
+   <p class="underline">puntaje</p>
+  </div>  
+  <div class="rubrica">
+   <p class="underline"> Aspectos</p>
+  </div>
+  <div class="promedioCurso">
+   <p class="underline">c</p>
+ </div>
+</div>
+
+<div class="grid-container">
+	<div class="promedioGrupo">
+  	<p>promedio</p>
+  </div>
+  <div class="puntajeObtenido">
+   <ul>
+   	<li>p ev 1</li>
+    <li>p ev 2</li>
+    <li>p ev 3</li>
+   </ul>
+  </div>  
+  <div class="rubrica">
+   <p class="underline"> aspecto1 </p>
+   <input type="checkbox" class="read-more-state" id="post1" />
+
+  <ul class="read-more-wrap">
+    <li class="read-more-target">lorem 1</li>
+    <li class="read-more-target">lorem 2</li>
+    <li class="read-more-target">lorem 3</li>
+    <li class="read-more-target">lorem 4</li>
+  </ul>
+  
+  <label for="post1" class="read-more-trigger"></label>
+  </div>
+  <div class="promedioCurso">
+   <p>p curso</p>
+  </div>
+</div>
+
+<div class="grid-container">
+	<div class="promedioGrupo">
+  	<p>promedio</p>
+  </div>
+  <div class="puntajeObtenido">
+   <ul>
+   	<li>p ev 1</li>
+    <li>p ev 2</li>
+    <li>p ev 3</li>
+   </ul>
+  </div>  
+  <div class="rubrica">
+   <p class="underline"> aspecto2 </p>
+   <input type="checkbox" class="read-more-state" id="post2" />
+
+  <ul class="read-more-wrap">
+    <li class="read-more-target">lorem 1</li>
+    <li class="read-more-target">lorem 2</li>
+    <li class="read-more-target">lorem 3</li>
+    <li class="read-more-target">lorem 4</li>
+  </ul>
+  
+  <label for="post2" class="read-more-trigger"></label>
+  </div>
+  <div class="promedioCurso">
+   <p>p curso</p>
+  </div>
+</div>
+
+<div class="grid-container">
+	<div class="promedioGrupo">
+  	<p>promedio</p>
+  </div>
+  <div class="puntajeObtenido">
+   <ul>
+   	<li>p ev 1</li>
+    <li>p ev 2</li>
+    <li>p ev 3</li>
+   </ul>
+  </div>  
+  <div class="rubrica">
+   <p class="underline"> aspecto3 </p>
+   <input type="checkbox" class="read-more-state" id="post3" />
+
+  <ul class="read-more-wrap">
+    <li class="read-more-target">lorem 1</li>
+    <li class="read-more-target">lorem 2</li>
+    <li class="read-more-target">lorem 3</li>
+    <li class="read-more-target">lorem 4</li>
+  </ul>
+  
+  <label for="post3" class="read-more-trigger"></label>
+  </div>
+  <div class="promedioCurso">
+   <p>p curso</p>
+  </div>
+</div>
+
+<div class="grid-container">
+	<div class="promedioGrupo">
+  	<p>promedio</p>
+  </div>
+  <div class="puntajeObtenido">
+   <ul>
+   	<li>p ev 1</li>
+    <li>p ev 2</li>
+    <li>p ev 3</li>
+   </ul>
+  </div>  
+  <div class="rubrica">
+   <p class="underline"> aspecto4 </p>
+   <input type="checkbox" class="read-more-state" id="post4" />
+
+  <ul class="read-more-wrap">
+    <li class="read-more-target">lorem 1</li>
+    <li class="read-more-target">lorem 2</li>
+    <li class="read-more-target">lorem 3</li>
+    <li class="read-more-target">lorem 4</li>
+  </ul>
+  
+  <label for="post4" class="read-more-trigger"></label>
+  </div>
+  <div class="promedioCurso">
+   <p>p curso</p>
+  </div>
+</div>
+
+<div class="grid-container">
+	<div class="promedioGrupo">
+  	<p>promedio</p>
+  </div>
+  <div class="puntajeObtenido">
+   <ul>
+   	<li>p ev 1</li>
+    <li>p ev 2</li>
+    <li>p ev 3</li>
+   </ul>
+  </div>  
+  <div class="rubrica">
+   <p class="underline"> aspecto5 </p>
+   <input type="checkbox" class="read-more-state" id="post5" />
+
+  <ul class="read-more-wrap">
+    <li class="read-more-target">lorem 1</li>
+    <li class="read-more-target">lorem 2</li>
+    <li class="read-more-target">lorem 3</li>
+    <li class="read-more-target">lorem 4</li>
+  </ul>
+  
+  <label for="post5" class="read-more-trigger"></label>
+  </div>
+  <div class="promedioCurso">
+   <p>p curso</p>
+  </div>
+</div>
+</body>
+</html>
