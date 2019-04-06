@@ -1,45 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Rúbrica</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-  .jumbotron {
-    background-color: #f4511e;
+    <style>
+  .bg-1 {
+    background-color: #f2e6ff;
+    color: #000000;
+	padding: 10px;
+  }
+  
+  .bg-2 {
+    background-color: #ffffff;
     color: #fff;
+	padding: 10px;
+  }
+
+  .jumbotron {
+    background-color: #800080;
+    color: #fff;
+	padding: 10px;
+  }
+  
+
+
+  .btn_2 {
+    background-color: #cc00cc;
+    color: #fff;
+	padding: 10px;
+  }
+  
+  .btn_logo {
+	padding: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #cc00cc;
+    color: #fff;
+	padding: 10px;
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  
+  .panel {
+    border: 1px solid #e600e6; 
+    border-radius:0px ;
+    transition: box-shadow 0.5s;
+  }
+  
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .logo {
+    color: #800080;
+    font-size: 20px;
   }
   </style>
+  
+  
+  </style>
 </head>
-<body>
+<body class="bg-1">
 
 <div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>Rúbrica Tarea 1</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-8">
+				<p>Bienvenido/a profesor/a!</p> 
+			</div>
+		</div>
+	</div>
+  
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
-      <p>Ut enim ad..</p>
+    <div class="col-sm-3">
+      <button class="btn btn-lg btn_2">Agregar aspecto</button>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor..</p>
-      <p>Ut enim ad..</p>
+    <div class="col-sm-3">
+      <button class="btn btn-lg btn_2">Suma de puntajes: 6</button>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3> 
-      <p>Lorem ipsum dolor..</p>
-      <p>Ut enim ad..</p>
+	<div class="col-sm-3">
+      <button class="btn btn-lg btn_2">Finalizar edición</button>
     </div>
+	<div class="col-sm-3">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="number">Duración presentacion:</label>
+				<input type="number" class="form-control" id="int_pres" placeholder="Ingrese duración" name="number">
+			</div>  
+		</form>
+	 </div>
   </div>
 </div>
+
+
+<div class "container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-sm-4">
+				    <form class="form-inline">
+						<div class="input-group">
+							<label for="Nombre aspecto">Nombre aspecto:</label>
+							<input type="name" class="form-control" id="Nombre aspecto" placeholder="Nombre del aspecto" value="Definición requisitos">
+						</div> 
+					</form>
+				</div>
+				<div class="col-sm-4 text-center">
+					<button class="btn btn-lg btn_2">Agregar nivel de cumplimiento</button>
+				</div>
+				<div class="col-sm-4 text-right">
+					<button type="button btn_logo" class="btn btn-default btn_logo">
+						<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+					</button>
+				</div>
+			</div>
+		</div>
+			
+		<div class="panel-body">
+			<ul class="list-group">
+				<li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Morbi leo risus</li>
+				<li class="list-group-item">Porta ac consectetur ac</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
 
 </body>
 </html>
