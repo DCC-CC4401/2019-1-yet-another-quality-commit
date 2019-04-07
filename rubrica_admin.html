@@ -9,29 +9,37 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <style>
   .bg-1 {
-    background-color: #f2e6ff;
+    background-color: #CBC5EA;
     color: #000000;
 	padding: 10px;
   }
   
   .bg-2 {
-    background-color: #ffffff;
+    background-color: #EAEAEA;
     color: #fff;
 	padding: 10px;
   }
 
   .jumbotron {
-    background-color: #800080;
+    background-color: #73628A;
     color: #fff;
 	padding: 10px;
   }
   
-
+  .divider-10 {
+    width:100%; 
+    min-height:1px; 
+    margin-top:10px; 
+    margin-bottom:10px;  
+    display:inline-block; 
+    position:relative;
+  }
 
   .btn_2 {
-    background-color: #cc00cc;
+    background-color: #5b71a4;
     color: #fff;
 	padding: 10px;
+	border-radius: 15px
   }
   
   .btn_logo {
@@ -39,23 +47,22 @@
   }
   
   .btn:hover {
-    background-color: #cc00cc;
+    background-color: #5b71a4;
     color: #fff;
 	padding: 10px;
 	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   
   .panel {
-    border: 1px solid #e600e6; 
-    border-radius:0px ;
+    border: 1px solid #EAEAEA; 
+    border-radius:15px ;
     transition: box-shadow 0.5s;
   }
-  
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .logo {
-    color: #800080;
+    color: #5b71a4;
     font-size: 20px;
   }
   </style>
@@ -69,7 +76,12 @@
   <h1>Rúbrica Tarea 1</h1>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-8">
+			<div class="col-sm-2">
+				<button type="button" class="btn btn-default btn-sm">
+				    <span class="glyphicon glyphicon-arrow-left logo"></span> Menú principal
+				</button>
+			</div>
+			<div class="col-sm-4 col-sm-offset-6">
 				<p>Bienvenido/a profesor/a!</p> 
 			</div>
 		</div>
@@ -83,7 +95,7 @@
       <button class="btn btn-lg btn_2">Agregar aspecto</button>
     </div>
     <div class="col-sm-3">
-      <button class="btn btn-lg btn_2">Suma de puntajes: 6</button>
+      <button class="btn btn-lg btn_2">Suma de puntajes: 1.0</button>
     </div>
 	<div class="col-sm-3">
       <button class="btn btn-lg btn_2">Finalizar edición</button>
@@ -91,12 +103,68 @@
 	<div class="col-sm-3">
 		<form class="form-inline">
 			<div class="form-group">
-				<label for="number">Duración presentacion:</label>
-				<input type="number" class="form-control" id="int_pres" placeholder="Ingrese duración" name="number">
+				<label for="sr-only">Duración:</label>
+				<input type="number" class="form-control form-control-sm" id="int_pres" placeholder="Ingrese duración" name="number">
 			</div>  
 		</form>
 	 </div>
   </div>
+</div>
+
+<div class="divider-10"></div>
+
+<div class "container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-sm-4">
+				    <form class="form-inline">
+						<div class="input-group">
+							<label for="Nombre aspecto">Nombre aspecto:</label>
+							<input type="name" class="form-control" id="Nombre aspecto" placeholder="Nombre del aspecto">
+						</div> 
+					</form>
+				</div>
+				<div class="col-sm-4 text-center">
+					<button class="btn btn-lg btn_2">Agregar nivel de cumplimiento</button>
+				</div>
+				<div class="col-sm-4 text-right">
+					<button type="button btn_logo" class="btn btn-default btn_logo">
+						<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+					</button>
+				</div>
+			</div>
+		</div>
+			
+		<div class="panel-body">
+			<div class="container">
+				<form>
+					<div class="form-row">
+						<div class="col-sm-2">
+						    <div class="form-group">
+								<label for="exampleFormControlInput1">Puntaje</label>
+								<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Puntaje">
+						    </div>
+						</div>
+						<div class="col-sm-9">
+						    <div class="form-group">
+								<label for="exampleFormControlTextarea1">Descripción</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						    </div>
+						</div>
+						<div class="col-sm-1 text-right">
+							<div class="divider-10"></div>
+							<button type="button btn_logo" class="btn btn-default btn_logo">
+								<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+							</button>
+						</div>
+					  </div>
+					</form>
+			</div>
+
+		</div>
+
+	</div>
 </div>
 
 
@@ -124,18 +192,130 @@
 		</div>
 			
 		<div class="panel-body">
-			<ul class="list-group">
-				<li class="list-group-item">Cras justo odio</li>
-				<li class="list-group-item">Dapibus ac facilisis in</li>
-				<li class="list-group-item">Morbi leo risus</li>
-				<li class="list-group-item">Porta ac consectetur ac</li>
-				<li class="list-group-item">Vestibulum at eros</li>
-			</ul>
+			<div class="container">
+				<form>
+					<div class="form-row">
+						<div class="col-sm-2">
+						    <div class="form-group">
+								<label for="exampleFormControlInput1">Puntaje</label>
+								<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Puntaje" value="0">
+						    </div>
+						</div>
+						<div class="col-sm-9">
+						    <div class="form-group">
+								<label for="exampleFormControlTextarea1">Descripción</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" >No incluye RFs</textarea>
+						    </div>
+						</div>
+						<div class="col-sm-1 text-right">
+							<div class="divider-10"></div>
+							<button type="button btn_logo" class="btn btn-default btn_logo">
+								<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+							</button>
+						</div>
+					  </div>
+					</form>
+			</div>
+			<div class="container">
+				<form>
+					<div class="form-row">
+						<div class="col-sm-2">
+						    <div class="form-group">
+								<label for="exampleFormControlInput1">Puntaje</label>
+								<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Puntaje" value="0.3">
+						    </div>
+						</div>
+						<div class="col-sm-9">
+						    <div class="form-group">
+								<label for="exampleFormControlTextarea1">Descripción</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> Solo definen correctamente 1-2 RFs</textarea>
+						    </div>
+						</div>
+						<div class="col-sm-1 text-right">
+							<div class="divider-10"></div>
+							<button type="button btn_logo" class="btn btn-default btn_logo">
+								<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+							</button>
+						</div>
+					  </div>
+					</form>
+			</div>
+			<div class="container">
+				<form>
+					<div class="form-row">
+						<div class="col-sm-2">
+						    <div class="form-group">
+								<label for="exampleFormControlInput1">Puntaje</label>
+								<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Puntaje" value="0.5">
+						    </div>
+						</div>
+						<div class="col-sm-9">
+						    <div class="form-group">
+								<label for="exampleFormControlTextarea1">Descripción</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Solo definen correctamente 3-4 RFs</textarea>
+						    </div>
+						</div>
+						<div class="col-sm-1 text-right">
+							<div class="divider-10"></div>
+							<button type="button btn_logo" class="btn btn-default btn_logo">
+								<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+							</button>
+						</div>
+					  </div>
+					</form>
+			</div>
+			<div class="container">
+				<form>
+					<div class="form-row">
+						<div class="col-sm-2">
+						    <div class="form-group">
+								<label for="exampleFormControlInput1">Puntaje</label>
+								<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Puntaje" value="0.7">
+						    </div>
+						</div>
+						<div class="col-sm-9">
+						    <div class="form-group">
+								<label for="exampleFormControlTextarea1">Descripción</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Solo definen correctamente 5-6 RFs</textarea>
+						    </div>
+						</div>
+						<div class="col-sm-1 text-right">
+							<div class="divider-10"></div>
+							<button type="button btn_logo" class="btn btn-default btn_logo">
+								<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+							</button>
+						</div>
+					  </div>
+					</form>
+			</div>
+			<div class="container">
+				<form>
+					<div class="form-row">
+						<div class="col-sm-2">
+						    <div class="form-group">
+								<label for="exampleFormControlInput1">Puntaje</label>
+								<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Puntaje" value="1.0">
+						    </div>
+						</div>
+						<div class="col-sm-9">
+						    <div class="form-group">
+								<label for="exampleFormControlTextarea1">Descripción</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Definen correctamente 7 RFs</textarea>
+						    </div>
+						</div>
+						<div class="col-sm-1 text-right">
+							<div class="divider-10"></div>
+							<button type="button btn_logo" class="btn btn-default btn_logo">
+								<span class="glyphicon glyphicon-trash logo"></span> Borrar 
+							</button>
+						</div>
+					  </div>
+					</form>
+			</div>
 		</div>
 
 	</div>
 </div>
-
 
 
 </body>
