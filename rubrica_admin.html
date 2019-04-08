@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Rúbrica</title>
+  <title>Rúbrica admin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -31,23 +31,32 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-2 col-sm-offset-1">
       <button class="btn btn-lg btn_2">Agregar aspecto</button>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       <button class="btn btn-lg btn_2">Suma de puntajes: 1.0</button>
     </div>
-	<div class="col-sm-3">
+	<div class="col-sm-2">
       <button class="btn btn-lg btn_2">Finalizar edición</button>
     </div>
-	<div class="col-sm-3">
-		<form class="form-inline">
+	<div class="col-sm-2">
+		<form>
 			<div class="form-group">
-				<label for="sr-only">Duración:</label>
-				<input type="number" class="form-control form-control-sm" id="int_pres" placeholder="Ingrese duración" name="number">
-			</div>  
+				<label for="int_pres">Duración mínima:	</label>
+				<input type="number" class="form-control form-control-sm" id="int_pres" placeholder="Ingrese minutos" name="number" value="7">
+			</div> 			
 		</form>
 	 </div>
+	 <div class="col-sm-2">
+		<form>
+			<div class="form-group">
+				<label for="int_pres-2">Duración máxima:	</label>
+				<input type="number" class="form-control form-control-sm" id="int_pres-2" placeholder="Ingrese minutos" name="number" value="9">
+			</div> 		
+		</form>
+	 </div>
+	 
   </div>
 </div>
 
