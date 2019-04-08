@@ -7,7 +7,8 @@
   display: grid;
   grid-template-areas: 
   "datosl datosr datosr datosr"
-  "rubrica puntajeObtenido promedioGrupo promedioCurso";
+  "rubrica puntajeObtenido promedioGrupo promedioCurso"
+  "none none resultado resultado";
   grid-template-columns: 60% 20% 10% 10%;
     grid-row-gap: 0px;
 } 
@@ -18,12 +19,17 @@ p.underline {
   border-color: blue;
 }
 
+p.orange {
+  color: #ff751a;
+}
+
 .datosl,
 .datosr,
 .promedioCurso,
 .promedioGrupo,
 .puntajeObtenido, 
-.rubrica{
+.rubrica,
+.resultado{
   background-color: #e5ccff;
   border-style: none;
   border-width: 1px;
@@ -31,13 +37,21 @@ p.underline {
   padding: 10px;
 }
 
+.resultado{
+  grid-area: resultado;
+  background-color: #73628a;
+  color: white;
+}
+
 .datosr{
   grid-area: datosr;
-  background-color: #f2e6ff;
+  background-color: #73628a;
+  color: white;
 }
 .datosl{
   grid-area: datosl;
-  background-color: #f2e6ff;
+  background-color: #73628a;
+  color: white;
 }
 .promedioCurso {
   grid-area: promedioCurso;
@@ -97,11 +111,18 @@ p.underline {
 </style>
 </head>
 
-<body>
+<body style="background-color: #CBC5EA">
 <div class="grid-container">
   <div class="datosl">
     Curso: Ingeniería de Software <br>
-    Fecha: 09/04/2019
+    Fecha: 09/04/2019<br>
+    Evaluadores: 
+  <ul>
+   <li> evaluador 1 </li>
+   <li> evaluador 2 </li>
+   <li> evaluador 3 </li>
+  </ul>
+  
   </div>
   <div class="datosr">
   Grupo: yet another quality commit<br>
@@ -271,6 +292,14 @@ p.underline {
   <div class="promedioCurso">
    <p>p curso</p>
   </div>
+</div>
+
+<div class="grid-container">
+	<div class="resultado">
+      <p> Nota: prom <br>
+      Duracion: 7 min
+      </p>
+   	</div>
 </div>
 </body>
 </html>
