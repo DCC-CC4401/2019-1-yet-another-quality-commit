@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Evaluación</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-1">
+  <div class="jumbotron">
+    <h2 class="text-center">Evaluación ...</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <h3>Información</h3>
+          <table class="table table-hover">
+            <tbody>
+              <tr>
+                <td>Curso</td>
+                <td class="text-right">AB-1234</td>
+              </tr>
+              <tr>
+                <td>Estado</td>
+                <td class="text-right">En curso</td>
+              </tr>
+              <tr>
+                <td>Inicio</td>
+                <td class="text-right">Hoy</td>
+              </tr>
+              <tr>
+                <td>Fin</td>
+                <td class="text-right">10-04-1945</td>
+              </tr>
+              <tr>
+                <td>Duracion presentaciones</td>
+                <td class="text-right">10 seg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="nav nav-tabs nav-justified">
+      <li class="active"><a data-toggle="tab" href="#rubrica">Rubrica</a></li>
+      <li><a data-toggle="tab" href="#equipos">Equipos</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="rubrica" class="tab-pane fade in active">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-4">
+                <form class="form-inline">
+                  <div class="input-group">
+                    <label for="Nombre aspecto">Nombre aspecto:</label>
+                    <input type="text" class="form-control" id="Nombre aspecto" readonly class="form-control-plaintext" value="Definición requisitos">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.0">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">No incluye RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.3">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3"> Solo definen correctamente 1-2 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.5">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">Solo definen correctamente 3-4 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.7">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">Solo definen correctamente 5-6 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="1.0">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">Definen correctamente 7 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-sm-4">
+                <form class="form-inline">
+                  <div class="input-group">
+                    <label for="Nombre aspecto">Nombre aspecto:</label>
+                    <input type="text" class="form-control" id="Nombre aspecto" readonly class="form-control-plaintext" value="Definición requisitos">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.0">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">No incluye RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.3">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3"> Solo definen correctamente 1-2 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.5">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">Solo definen correctamente 3-4 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="0.7">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">Solo definen correctamente 5-6 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-2">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Puntaje</label>
+                      <input type="number" class="form-control" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Puntaje" value="1.0">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Descripción</label>
+                      <textarea class="form-control" readonly class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3">Definen correctamente 7 RFs</textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="equipos" class="tab-pane fade">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-success">
+            <h4 class="list-group-item-heading">Equipo 1 ...</h4>
+            <p class="list-group-item-text">Estado: Activo</p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Equipo 2 ...</h4>
+            <p class="list-group-item-text">Estado: Evaluado</p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Equipo 3 ...</h4>
+            <p class="list-group-item-text">Estado: Evaluado</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
