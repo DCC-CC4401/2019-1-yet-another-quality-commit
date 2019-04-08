@@ -3,57 +3,65 @@
 <p style="font-family: Verdana">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Perritos</title>
     <style>
-        .col_1 {
-            background-color: #430073;
-        }
-        .col_2 {
-            background-color: #6800B3;
-            offset-after: 10px;
-        }
-        .col_3 {
-            background-color: #8D00F2;
-        }
         .container{
             width: 1366px;
             font-family: Futura;
 
         }
-       
+
         .center {
          text-align: center
         }
         .classWithPad { margin:30px; padding:10px;}
 
         .prin_color {
-            -webkit-text-fill-color: #e59219;
+            -webkit-text-fill-color: white;
         }
         .prin_color_2 {
-            -webkit-text-fill-color: #ffba41;
+            -webkit-text-fill-color: #313d53;
         }
-        .row_color {
-            background-color: #3b0066;
-        }
-       
 
+        .row_color {
+            background-color: #73628a;
+        }
+
+        .btn-xl {
+            height: 150px;
+            width: 250px;
+            font-size: 30px;
+            border-radius: 10px;
+            background-color: #5a6da8;
+            border-color: #5a6da8;
+            -webkit-text-fill-color: #EAEAEA;
+
+
+        }
+        .btn-xl:hover, .btn-xl:active, .btn-xl:focus{
+            background-color: #EAEAEA;
+            border-color: #eaeaea;
+            -webkit-text-fill-color: #5a6da8;
+            box-shadow: 7px 7px 40px rgba(0,0,0);
+
+        }
 
         A:hover {
-            -webkit-text-fill-color: #ffd080;
+            -webkit-text-fill-color: #eaeaea;
             TEXT-DECORATION: underline;
             font-weight: lighter
         }
-        .link_big{
-            -webkit-text-fill-color: #688ab0;
-        }
+
 
 
 
     </style>
 
 </head>
-<body style="background-color: white">
+<body style="background-color: #CBC5EA">
 
     <div class="container">
         <div class="row row_color">
@@ -72,7 +80,7 @@
 
             </div>
             <div class="text-justify col-sm-2 ">
-                <h5><small><a href="#" class = "prin_color_2">change password</a></small></h5>
+                <h5><small><a href="#" class = "prin_color">change password</a></small></h5>
             </div>
         </div>
           <div class="row row_color">
@@ -80,41 +88,38 @@
 
             </div>
 
-            <div class="text-justify prin_color_2 col-sm-2 ">
-                <h5><small><a href="#" class = "prin_color_2">Salir</a></small></h5>
+            <div class="text-justify prin_color col-sm-2 ">
+                <h5><small><a href="#" class = "prin_color">Salir</a></small></h5>
             </div>
 
           </div>
         <div class="row">
-            <div class="col-sm">
-                <p>  </p>
-            </div>
-            </div>
 
-          <div class="row">
-
-            <div class="center rounded border col col_1">
+            <div class="center col">
                     <div class="classWithPad">
-                     <h3><a href = "#" class = "prin_color">Evaluaciones</a></h3>
+                    <button type="button" class="btn-xl btn">Evaluación</button>
                     </div>
             </div>
 
-            <div class="center rounded col col_2">
+            <div class="center col">
                 <div class="classWithPad ">
-                    <h3><a href ="#" class = "prin_color">Cursos</a></h3></div>
+                    <button type="button" class="btn-xl btn">Cursos</button>
+                </div>
             </div>
 
 
 
-                  <div class="center rounded border col col_3">
+
+                  <div class="center col col_1">
                       <div class="classWithPad">
-               <h3><a href="#" class = "prin_color">Evaluadores</a></h3></div>
+                    <button type="button" class="btn btn-xl">Evaluadores</button>
             </div>
 
                <div class="col-3">
 
             </div>
               </div>
+
 
 
 
@@ -128,4 +133,6 @@
 
     </div>
 
+
 </body>
+</html>
